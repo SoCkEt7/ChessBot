@@ -1,0 +1,86 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    color: #3AB9FF;
+    text-decoration: none;
+}
+
+#board{
+    border: 1px solid #000;
+    float:left;
+    margin-right: 10px;
+}
+
+.clear{clear:both}
+
+#board div:not(.clear){
+    width: 50px;
+    height: 50px;
+    border:none;
+    float:left;
+}
+
+#board div:not(.clear){
+    box-shadow:inset 0 0 0 1px #fff;
+    -moz-box-shadow:inset 0 0 0 1px #fff;
+    -webkit-box-shadow:inset 0 0 0 1px #fff;
+    text-align:center;
+    background:-moz-linear-gradient(top, #fff, #eee);
+    background:-webkit-gradient(linear,0 0, 0 100%, from(#fff), to(#eee));
+}
+
+
+#board div:nth-child(2n):not(.clear){
+
+    background:#ccc;
+    background:-moz-linear-gradient(top, #ccc, #eee);
+    background:-webkit-gradient(linear,0 0, 0 100%, from(#ccc), to(#eee));
+    box-shadow:inset 0 0 10px rgba(0,0,0,.4);
+    -moz-box-shadow:inset 0 0 10px rgba(0,0,0,.4);
+    -webkit-box-shadow:inset 0 0 10px rgba(0,0,0,.4);
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+footer {
+    height: 25px;
+
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+}
+
+#analyse {
+
+}
+
+.piece{
+    font-size:47px;
+    text-shadow:2px 0px  3px #ccc;
+    cursor : pointer;
+    position:relative;
+    top:-7px;
+    left:1px;
+}
+
+.overlayLoader{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #ffffff url("http://www.cardealpage.com/img/ajax-loader3.gif") no-repeat center;
+}
